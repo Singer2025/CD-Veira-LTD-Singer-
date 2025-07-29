@@ -1,0 +1,44 @@
+{
+  "linkSections": [
+    {
+      "id": "shopByCategory",
+      "titleKey": "Footer.ShopByCategory.title",
+      "links": [
+        { "textKey": "Footer.ShopByCategory.Electronics", "href": "./search?category=electronics" },
+        { "textKey": "Footer.ShopByCategory.Appliances", "href": "./search?category=appliances" },
+        { "textKey": "Footer.ShopByCategory.HomeGarden", "href": "./search?category=home-garden" },
+        { "textKey": "Footer.ShopByCategory.PersonalCare", "href": "./search?category=personal-care" },
+        { "textKey": "Footer.ShopByCategory.AllCategories", "href": "./search" }
+      ]
+    },
+    {
+      "id": "aboutUs",
+      "titleKey": "Footer.AboutUs.title",
+      "links": [
+        { "textKey": "Footer.AboutUs.OurStory", "href": "/about" },
+        { "textKey": "Footer.ContactUs.title", "href": "/contact" }
+      ]
+    },
+    {
+      "id": "warranty",
+      "titleKey": "Footer.Warranty.title",
+      "links": [
+        { "textKey": "Footer.Warranty.Coverage", "href": "/warranty" }
+      ]
+    }
+  ],
+  "legalLinks": [
+    { "textKey": "Footer.Legal.Privacy", "href": "/privacy" },
+    { "textKey": "Footer.Legal.TermsTV", "href": "/terms-tv" },
+    { "textKey": "Footer.Legal.TermsMobile", "href": "/terms-mobile" },
+    { "textKey": "Footer.Legal.CookieNotice", "href": "/cookie-notice" },
+    { "textKey": "Footer.Legal.DoNotSell", "href": "/do-not-sell" }
+  ],
+  "socialLinks": [
+    { "name": "Facebook", "icon": "Facebook", "href": "#" },
+    { "name": "Twitter", "icon": "Twitter", "href": "#" },
+    { "name": "Instagram", "icon": "Instagram", "href": "#" },
+    { "name": "YouTube", "icon": "YouTube", "href": "#" },
+    { "name": "LinkedIn", "icon": "LinkedIn", "href": "#" }
+  ]
+}
