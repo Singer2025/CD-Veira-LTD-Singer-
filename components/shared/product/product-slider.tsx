@@ -35,6 +35,7 @@ export default function ProductSlider({
           <Link 
             href={viewAllLink}
             className="text-sm font-medium text-primary hover:text-primary/80 flex items-center gap-1 transition-colors group"
+            locale={false}
           >
             View All <ChevronRight size={16} className="group-hover:translate-x-1 transition-transform duration-300" />
           </Link>

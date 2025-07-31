@@ -21,7 +21,23 @@ const data = {
     paymentMethod: 'Stripe',
     emailVerified: true,
   },
-  // Removed duplicate admin user for production
+  {
+    name: 'John',
+    email: 'admin@example.com',
+    password: bcrypt.hashSync('123456', 5),
+    role: 'Admin',
+    address: {
+      fullName: 'John Doe',
+      street: '111 Main St',
+      city: 'New York',
+      province: 'NY',
+      postalCode: '10001',
+      country: 'USA',
+      phone: '123-456-7890',
+    },
+    paymentMethod: 'Stripe',
+    emailVerified: false,
+  },
   {
     name: 'Jane',
     email: 'jane@example.com',
@@ -793,7 +809,7 @@ categories: [
         slogan: 'Spend less, enjoy more.',
         author: 'Next Ecommerce',
         copyright: '2000-2024, Next-Ecommerce.com, Inc. or its affiliates',
-        email: 'admin@example.com',
+        email: 'admin@cdveiraltd.com',
         address: '123, Main Street, Anytown, CA, Zip 12345',
         phone: '+1 (123) 456-7890',
       },

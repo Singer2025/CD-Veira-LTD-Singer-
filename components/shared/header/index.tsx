@@ -11,12 +11,13 @@ import CurrencySwitcher from './currency-switcher' // Newly created currency swi
 
 // Define navigation links based on the new design
 // Placeholder HREFs for items that might be dropdowns or need specific paths
+// Define navigation links that will be prefixed with locale
 const newNavLinks = [
   { href: '/', textKey: 'Header.NavHome' },
   { href: '/search', textKey: 'Header.NavShop' }, // SHOP links to search page
-  { href: '/deals', textKey: 'Header.NavFeaturesDeals' }, // Placeholder
-  { href: '/brands', textKey: 'Header.NavBrands' }, // Placeholder
-  { href: '/support/repair', textKey: 'Header.NavPartsRepair' }, // Placeholder
+  { href: '/search?tag=featured', textKey: 'Header.NavFeaturesDeals' }, // Changed to existing search with tag
+  { href: '/search', textKey: 'Header.NavBrands' }, // Changed to search page
+  { href: '/contact', textKey: 'Header.NavPartsRepair' }, // Changed to contact page
   { href: '/about', textKey: 'Header.About Us' }, // Reuses existing key
   { href: '/contact', textKey: 'Header.NavContactUs' },
   { href: '/page/help-faq', textKey: 'Header.HelpFAQsLink' }, // Placeholder

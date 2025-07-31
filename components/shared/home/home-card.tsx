@@ -34,6 +34,7 @@ export function HomeCard({ cards }: { cards: CardItem[] }) {
                   key={item.name}
                   href={item.href}
                   className='flex flex-col group'
+                  locale={false}
                 >
                   <div className="relative overflow-hidden rounded-[var(--radius-md)] mb-[var(--space-sm)] transition-transform duration-300 group-hover:scale-[1.03] z-10">
                     <div className="relative w-full aspect-square bg-gray-100 rounded-[var(--radius-md)]">
@@ -61,6 +62,7 @@ export function HomeCard({ cards }: { cards: CardItem[] }) {
               <Link
                 href={card.link.href}
                 className='w-full text-center text-sm font-medium text-[var(--color-primary)] hover:text-[var(--color-primary-dark)] transition-colors duration-200 flex items-center justify-center py-[var(--space-sm)]'
+                locale={false}
               >
                 {card.link.text}
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">

@@ -42,7 +42,7 @@ export default function BrandsSlider({
               key={brand._id}
               className='md:basis-1/4 lg:basis-1/6 pl-4'
             >
-              <Link href={`./search?brand=${brand.slug}`} className="block">
+              <Link href={`/search?brand=${brand.slug}`} className="block" locale={false}>
                 <Card className="h-full border shadow-sm hover:shadow-md transition-all duration-300 rounded-lg overflow-hidden">
                   <CardContent className="flex flex-col items-center justify-center p-6 h-full">
                     {brand.logo ? (

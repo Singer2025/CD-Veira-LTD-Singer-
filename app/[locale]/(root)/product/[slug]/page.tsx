@@ -164,7 +164,7 @@ async function ProductDetailsContent({ slug }: { slug: string }) {
             </svg>
           </li>
           <li>
-            <Link href={`./search?brand=${getBrandSlug(product.brand)}`} className="block transition hover:text-gray-700">
+            <Link href={`/search?brand=${getBrandSlug(product.brand)}`} className="block transition hover:text-gray-700">
               {getBrandName(product.brand)}
             </Link>
           </li>
@@ -183,7 +183,7 @@ async function ProductDetailsContent({ slug }: { slug: string }) {
             </svg>
           </li>
           <li>
-            <Link href={`./search?category=${getCategorySlug(product.category)}`} className="block transition hover:text-gray-700">
+            <Link href={`/search?category=${getCategorySlug(product.category)}`} className="block transition hover:text-gray-700">
               {getCategoryName(product.category)}
             </Link>
           </li>
@@ -231,7 +231,7 @@ async function ProductDetailsContent({ slug }: { slug: string }) {
           <div className="lg:col-span-1 space-y-2 sm:space-y-3 lg:space-y-4 order-2">
             {/* Brand Above Product Name */}
             <div className="space-y-1">
-              <Link href={`./search?brand=${getBrandSlug(product.brand)}`} className="text-sm sm:text-base lg:text-lg font-medium text-gray-600 hover:text-primary transition block">
+              <Link href={`/search?brand=${getBrandSlug(product.brand)}`} className="text-sm sm:text-base lg:text-lg font-medium text-gray-600 hover:text-primary transition block">
                 {getBrandName(product.brand)}
               </Link>
               <h1 className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-900 leading-tight">{product.name}</h1>

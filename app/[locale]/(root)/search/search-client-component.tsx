@@ -162,7 +162,7 @@ export default function SearchClientComponent({
     value: string | null;
   }) => {
     if (typeof formUrlQuery === 'function') {
-      return formUrlQuery({ params, key, value, path: './search' });
+      return formUrlQuery({ params, key, value, path: '/search' });
     } else {
       // Fallback if formUrlQuery is not available
       const urlParams = new URLSearchParams(params);
@@ -171,7 +171,7 @@ export default function SearchClientComponent({
       } else {
         urlParams.set(key, value);
       }
-      return `./search?${urlParams.toString()}`;
+      return `/search?${urlParams.toString()}`;
     }
   };
 

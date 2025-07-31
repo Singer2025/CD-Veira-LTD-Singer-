@@ -61,11 +61,11 @@ export default async function HomePage() {
       items: newestProducts.slice(0, 4).map(product => ({
         name: product.name,
         image: product.images && product.images.length > 0 ? product.images[0] : '/images/default-product.png',
-        href: product.slug ? `/${locale}/product/${product.slug}` : '#'
+        href: product.slug ? `/product/${product.slug}` : '#'
       })),
       link: {
         text: t('View All'),
-        href: `/${locale}/search?tag=new-arrival`,
+        href: `/search?tag=new-arrival`,
       },
     },
     {
@@ -73,11 +73,11 @@ export default async function HomePage() {
       items: bestSellers.map(product => ({
         name: product.name,
         image: product.images && product.images.length > 0 ? product.images[0] : '/images/default-product.png',
-        href: product.slug ? `/${locale}/product/${product.slug}` : '#'
+        href: product.slug ? `/product/${product.slug}` : '#'
       })),
       link: {
         text: t('View All'),
-        href: `/${locale}/search?tag=best-seller`,
+        href: `/search?tag=best-seller`,
       },
     },
     {
@@ -85,11 +85,11 @@ export default async function HomePage() {
       items: featureds.map(product => ({
         name: product.name,
         image: product.images && product.images.length > 0 ? product.images[0] : '/images/default-product.png',
-        href: product.slug ? `/${locale}/product/${product.slug}` : '#'
+        href: product.slug ? `/product/${product.slug}` : '#'
       })),
       link: {
         text: t('Shop Now'),
-        href: `/${locale}/search?tag=featured`,
+        href: `/search?tag=featured`,
       },
     },
   ]
@@ -152,7 +152,7 @@ export default async function HomePage() {
                 <NewArrivalsSlider
                   title=""
                   products={newestProducts}
-                  viewAllLink="./search?tag=new-arrival"
+                  viewAllLink={`/search?tag=new-arrival`}
                 />
               </CardContent>
             </Card>

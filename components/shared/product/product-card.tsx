@@ -83,7 +83,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
-        <Link href={product.slug ? `/product/${product.slug}` : '#'}
+        <Link href={product.slug ? `/product/${product.slug}` : '#'} locale={false}
           className='relative h-full w-full bg-white block'
         >
           {/* Primary Image with Motion */}
@@ -213,8 +213,9 @@ const ProductCard: React.FC<ProductCardProps> = ({
         {/* Brand Name */}
         {safeBrand && (
           <Link 
-            href={`./search?brand=${safeBrand}`}
+            href={`/search?brand=${safeBrand}`}
             className="text-xs font-medium text-primary/80 hover:text-primary transition-colors inline-block hover:underline"
+            locale={false}
           >
             {safeBrand}
           </Link>
@@ -224,6 +225,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
         <Link
           href={product.slug ? `/product/${product.slug}` : '#'}
           className='line-clamp-2 min-h-[2.5rem] font-medium text-gray-800 hover:text-primary transition-colors group-hover:text-primary/90 hover:underline'
+          locale={false}
         >
           {product.name}
         </Link>
@@ -292,7 +294,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
               </CardContent>
               <CardFooter className='px-5 pb-5 pt-2'>
                 <Button asChild className="w-full group relative overflow-hidden bg-primary hover:bg-primary/90 transition-all duration-300 transform hover:scale-[1.02] rounded-lg font-medium">
-                  <Link href={product.slug ? `/product/${product.slug}` : '#'}>
+                  <Link href={product.slug ? `/product/${product.slug}` : '#'} locale={false}>
                     More Details
                   </Link>
                 </Button>
